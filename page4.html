@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> NEW MEDIA at Virginia Tech</title>
+<link rel="icon" type="image/x-icon" href="favicon.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+  <style>
+  #div1 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+  }
+  </style>
+  <script>
+  function allowDrop(ev) {
+    ev.preventDefault();
+  }
+
+  function drag(ev) {
+    ev.dataTransfer.setData("Text", ev.target.id);
+  }
+
+  function drop(ev) {
+    var data = ev.dataTransfer.getData("Text");
+    ev.target.appendChild(document.getElementById(data));
+    ev.preventDefault();
+  }
+  </script>
+  </head>
+  <body>
+
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <br>
+  <p id="drag1" draggable="true" ondragstart="drag(event)">work?(drag me)</p>
+
+
+<p>It is working, yay right? <mark>Finally!</mark> Today is the day!</p>
+<br> <br>
+<img src="https://media2.giphy.com/media/l0HlvGBz8LSYQlA5y/200w.webp?cid=ecf05e472jk0vumlih1yxvgfvfsj7d95mg76r32ge03c1o14&rid=200w.webp&ct=g"><img src="https://media2.giphy.com/media/l0HlvGBz8LSYQlA5y/200w.webp?cid=ecf05e472jk0vumlih1yxvgfvfsj7d95mg76r32ge03c1o14&rid=200w.webp&ct=g"><img src="https://media2.giphy.com/media/l0HlvGBz8LSYQlA5y/200w.webp?cid=ecf05e472jk0vumlih1yxvgfvfsj7d95mg76r32ge03c1o14&rid=200w.webp&ct=g"><img src="https://media2.giphy.com/media/l0HlvGBz8LSYQlA5y/200w.webp?cid=ecf05e472jk0vumlih1yxvgfvfsj7d95mg76r32ge03c1o14&rid=200w.webp&ct=g"><img src="https://media2.giphy.com/media/l0HlvGBz8LSYQlA5y/200w.webp?cid=ecf05e472jk0vumlih1yxvgfvfsj7d95mg76r32ge03c1o14&rid=200w.webp&ct=g"><img src="https://media2.giphy.com/media/l0HlvGBz8LSYQlA5y/200w.webp?cid=ecf05e472jk0vumlih1yxvgfvfsj7d95mg76r32ge03c1o14&rid=200w.webp&ct=g">
+
+<br><br>
+<BODY TEXT="#cc00ff">
+<p> is it purple?</p>
+<br> <br> <br> <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;no, it is blue</p><br><br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="myFunction()">push me</button>
+
+<p id="demo"></p><br><br>
+
+<p>A function is triggered when the button is pushed. Did you do that?</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Ok good, it really is blue";
+}
+</script>
+<br> <br><br>
+
+<form action="/signup" method="post">
+  <p>
+    <label>WHAT IS IT?</label><br><br>
+    <label>
+      <input type="radio" name="title" value="HYDRO">
+      A HYDRO
+    </label>
+    <label>
+      <input type="radio" name="title" value="FLASK">
+      A FLASK
+    </label>
+    <label>
+      <input type="radio" name="title" value="HYDROFLASK">
+      A HYDROFLASK
+    </label>
+
+
+
+
+
+
+
+
+<body>
+
+</html>
